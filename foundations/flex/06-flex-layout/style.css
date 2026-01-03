@@ -18,9 +18,48 @@ button {
   background: #eee;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer, .footer ul a{
+  background-color: #eeeeee;
+  color: grey;
+}
+
+ul, ul a{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: grey;
+}
+.right-links, .left-links{
+  display: flex;
+  gap: 20px;
+
+}
+
+.content{
+  flex: 1;
+  align-self: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:16px;
 }
